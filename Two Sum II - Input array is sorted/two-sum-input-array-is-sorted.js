@@ -12,3 +12,5 @@ const twoSum = function(numbers, target) {
     }
   }
 };
+
+module.exports = twoSum;

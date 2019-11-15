@@ -1,3 +1,8 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 const twoSum = function(nums, target) {
   const comp = {}
   for (let idx = 0; idx < nums.length; ++idx) {
@@ -7,3 +12,5 @@ const twoSum = function(nums, target) {
     comp[target - nums[idx]] = idx
   }
 }
+
+module.exports = twoSum;

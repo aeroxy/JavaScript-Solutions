@@ -1,0 +1,22 @@
+{
+  "name": "javascript-solutions",
+  "version": "0.0.1",
+  "description": "This is a repo to document some of the solutions I created for JavaScript problems.",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeroxy/JavaScript-Solutions.git"
+  },
+  "author": "Aero Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeroxy/JavaScript-Solutions/issues"
+  },
+  "homepage": "https://github.com/aeroxy/JavaScript-Solutions#readme",
+  "dependencies": {
+    "mocha": "^6.2.2"
+  }
+}

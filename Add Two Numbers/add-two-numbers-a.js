@@ -58,3 +58,7 @@ const addTwoNumbers = (l1, l2) => {
   const number = add(getNumberFromNodes(l1), getNumberFromNodes(l2));
   return getNodesFromNumber(number);
 };
+/**
+ * 120 ms
+ * 40.8 MB
+ */

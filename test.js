@@ -1,5 +1,5 @@
 const assert = require('assert');
-const method = require('./Median of Two Sorted Arrays/median-of-two-sorted-arrays');
+const method = require('./Median of Two Sorted Arrays/median-of-two-sorted-arrays-c');
 
 it('TEST', () => {
   assert.equal(method([1, 3], [2]), 2);

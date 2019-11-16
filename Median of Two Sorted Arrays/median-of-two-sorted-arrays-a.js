@@ -20,5 +20,4 @@ const findMedianSortedArrays = (a1, a2) => {
  * 39.5 MB
  */
 
-
 module.exports = findMedianSortedArrays;

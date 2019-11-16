@@ -2,7 +2,6 @@
  * @param {string} str
  * @return {number}
  */
-
 const lengthOfLongestSubstring = str => {
   let start = 0, result = 0;
   const map = new Map();

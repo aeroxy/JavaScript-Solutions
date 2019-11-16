@@ -2,7 +2,6 @@
  * @param {string} str
  * @return {number}
  */
-
 const lengthOfLongestSubstring = str => {
   let substr = '', result = 0, count = 0;
   for (let c of str) {

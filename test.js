@@ -1,7 +1,8 @@
 const assert = require('assert');
-const method = require('./ZigZag Conversion/zigzag-conversion');
+const method = require('./ZigZag Conversion/zigzag-conversion-a');
 
 it('TEST', () => {
   assert.equal(method('PAYPALISHIRING', 3), 'PAHNAPLSIIGYIR');
   assert.equal(method('PAYPALISHIRING', 4), 'PINALSIGYAHRPI');
+  assert.equal(method('A', 1), 'A');
 });

@@ -13,31 +13,27 @@ const convert = (s, numRows) => {
     matrix[i] = [];
   }
   const interval = Math.ceil(s.length / length);
-  const gap = length - numRows + 1;
   for (let i = 0; i < interval; ++i) {
-
     for (let a = 0; a < numRows; ++a) {
-      const idx = i * length + a;
-      if (idx >= s.length) {
+      const c = s[i * length + a];
+      if (!c) {
         break;
       }
-      matrix[a][i * gap] = s[idx];
+      matrix[a].push(c);
     }
     for (let b = numRows; b < length; ++b) {
-      const idx = i * length + b;
-      if (idx >= s.length) {
+      const c = s[i * length + b];
+      if (!c) {
         break;
       }
-      const y = length - b;
-      const x = i * gap + b - numRows + 1;
-      matrix[y][x] = s[idx];
+      matrix[length - b].push(c);
     }
   }
   return matrix.map(a => a.join('')).join('');
 };
 /**
- * 132 ms
- * 50.4 MB
+ * 92 ms
+ * 41.6 MB
  */
 
 module.exports = convert;

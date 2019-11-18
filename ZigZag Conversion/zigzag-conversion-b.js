@@ -13,7 +13,6 @@ const convert = (s, numRows) => {
     matrix[i] = [];
   }
   const interval = Math.ceil(s.length / length);
-  const gap = length - numRows + 1;
   for (let i = 0; i < interval; ++i) {
 
     for (let a = 0; a < numRows; ++a) {
@@ -21,7 +20,7 @@ const convert = (s, numRows) => {
       if (idx >= s.length) {
         break;
       }
-      matrix[a][i * gap] = s[idx];
+      matrix[a].push(s[idx]);
     }
     for (let b = numRows; b < length; ++b) {
       const idx = i * length + b;
@@ -29,15 +28,14 @@ const convert = (s, numRows) => {
         break;
       }
       const y = length - b;
-      const x = i * gap + b - numRows + 1;
-      matrix[y][x] = s[idx];
+      matrix[y].push(s[idx]);
     }
   }
   return matrix.map(a => a.join('')).join('');
 };
 /**
- * 132 ms
- * 50.4 MB
+ * 96 ms
+ * 41.9 MB
  */
 
 module.exports = convert;

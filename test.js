@@ -1,9 +1,3 @@
-const assert = require('assert');
-const method = require('./Reverse Integer/reverse-integer-c');
+const cases = require('./String to Integer (atoi)/cases');
 
-it('TEST', () => {
-  assert.equal(method(123), 321);
-  assert.equal(method(-123), -321);
-  assert.equal(method(120), 21);
-  assert.equal(method(1534236469), 0);
-});
+it('TEST', cases);

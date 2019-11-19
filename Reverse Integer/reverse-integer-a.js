@@ -5,16 +5,16 @@
 const reverse = x => {
   const s = x.toString();
   if (s[0] === '-') {
-    const result = parseInt(`-${s.slice(1).split('').reverse().join('')}`);
-    return -2147483648 <= result ? result : 0;
+    const rev = parseInt(`-${s.slice(1).split('').reverse().join('')}`);
+    return -0x80000000 <= rev ? rev : 0;
   } else {
-    const result = parseInt(s.split('').reverse().join(''));
-    return 2147483648 > result ? result : 0;
+    const rev = parseInt(s.split('').reverse().join(''));
+    return 0x80000000 > rev ? rev : 0;
   }
 };
 /**
  * 72 ms
- * 36.2 MB
+ * 35.9 MB
  */
 
 module.exports = reverse;

@@ -3,24 +3,21 @@
  * @return {number}
  */
 const reverse = x => {
+  x = x.toString();
   let rev = 0;
-  while (x !== 0) {
-    const pop = x % 10;
-    rev = rev * 10 + pop;
-    if (rev >= 2147483648) {
+  while (x && x !== '-') {
+    const remainder = x % 10;
+    rev = rev * 10 + remainder;
+    if (rev >= 0x80000000 || rev < -0x80000000) {
       return 0;
     }
-    if (rev < -2147483648) {
-      return 0;
-    }
-    x = parseInt(x.toString().slice(0, -1));
-    x = isNaN(x) ? 0 : x;
+    x = x.slice(0, -1);
   }
   return rev;
 };
 /**
- * 92 ms
- * 36 MB
+ * 72 ms
+ * 35.9 MB
  */
 
 module.exports = reverse;

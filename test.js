@@ -1,5 +1,5 @@
 const assert = require('assert');
-const method = require('./Reverse Integer/reverse-integer-b');
+const method = require('./Reverse Integer/reverse-integer-c');
 
 it('TEST', () => {
   assert.equal(method(123), 321);

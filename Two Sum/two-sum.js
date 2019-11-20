@@ -12,5 +12,9 @@ const twoSum = function(nums, target) {
     comp[target - nums[idx]] = idx
   }
 }
+/**
+ * 42 ms
+ * 34.7 MB
+ */
 
 module.exports = twoSum;

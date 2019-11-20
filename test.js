@@ -1,3 +1,3 @@
-const cases = require('./String to Integer (atoi)/cases');
+const cases = require('./Palindrome Number/cases');
 
 it('TEST', cases);

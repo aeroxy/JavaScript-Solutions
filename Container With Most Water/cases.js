@@ -1,5 +1,5 @@
 const assert = require('assert');
-const method = require('./container-with-most-water-b');
+const method = require('./container-with-most-water-a');
 
 module.exports = () => {
   console.log([1,8,6,2,5,4,8,3,7], 49);

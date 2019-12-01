@@ -9,10 +9,12 @@ const isMatch = (s, p) => {
   }
   const lenS = s.length;
   const lenP = p.length;
-  const map = new Map();
-
+  const map = [];
   const check = (iS, iP) => {
-    const firstCheck = map.get(`${iS}:${iP}`);
+    if (!map[iS]) {
+      map[iS] = [];
+    }
+    const firstCheck = map[iS][iP];
     if (firstCheck !== undefined) {
       return firstCheck;
     }
@@ -21,24 +23,24 @@ const isMatch = (s, p) => {
     }
     if (iS === lenS && iP === lenP) {
       return true;
-    };
+    }
 
     if (p[iP] === '.' || p[iP] === s[iS]) {
-      map.set(`${iS}:${iP}`, p[iP + 1] === '*' ?
+      map[iS][iP] = p[iP + 1] === '*' ?
         check(iS + 1, iP) || check(iS, iP + 2) :
-        check(iS + 1, iP + 1));
+        check(iS + 1, iP + 1);
     } else {
-      map.set(`${iS}:${iP}`, p[iP + 1] === '*' ?
-        check(iS, iP + 2) : false);
+      map[iS][iP] = p[iP + 1] === '*' ?
+        check(iS, iP + 2) : false;
     }
-    return map.get(`${iS}:${iP}`);
+    return map[iS][iP];
   }
 
   return check(0, 0);
 }
 /**
- * 60 ms
- * 37.5 MB
+ * 64 ms
+ * 36.2 MB
  */
 
 module.exports = isMatch;

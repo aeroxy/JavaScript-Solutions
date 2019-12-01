@@ -1,5 +1,5 @@
 const assert = require('assert');
-const method = require('./regular-expression-matching-e');
+const method = require('./regular-expression-matching-h');
 
 module.exports = () => {
   console.log('aa', 'a');
@@ -22,4 +22,6 @@ module.exports = () => {
   assert.equal(method('', '.*'), true);
   console.log('aaa', 'aaaa');
   assert.equal(method('aaa', 'aaaa'), false);
+  console.log('aaa', 'a*a');
+  assert.equal(method('aaa', 'a*a'), true);
 }

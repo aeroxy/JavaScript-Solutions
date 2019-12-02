@@ -1,3 +1,3 @@
-const cases = require('../Roman to Integer/cases');
+const cases = require('../Longest Common Prefix/cases');
 
 it('TEST', cases);

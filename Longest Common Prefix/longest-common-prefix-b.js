@@ -4,37 +4,37 @@
  */
 const longestCommonPrefix = strs => {
   let result = '';
+  if (!strs.length) return result;
+  if (strs.length === 1) return strs[0];
   const length = strs[0].length;
-  if (!length) return result;
+  const last = length - 1;
+  const map = new Map();
   const binaryComp = idx => {
-    let comp = strs[0].substring(0, idx);
+    if (!strs[0][idx] || map.get(idx)) {
+      return result;
+    }
+    map.set(idx, true);
+    let comp = strs[0].substring(0, idx + 1);
     for (let str of strs) {
-      if (!(comp in str)) {
-        if (idx === 0) {
+      if (str.indexOf(comp) !== 0) {
+        if (idx === 0 || result.length === idx) {
           return result;
         }
-        return binaryComp(idx);
+        return binaryComp(idx - 1);
       }
     }
-    return binaryComp(idx)
+    if (idx === last) {
+      return comp;
+    }
+    result = comp;
+    return binaryComp(idx + 1);
   };
   let idx = length >> 1;
-
-  while (true) {
-    let c = strs[0][i];
-    for (let str of strs) {
-      if (str[i] === undefined || str[i] !== c) {
-        return result;
-      }
-    }
-    result = result.concat(c);
-    ++i;
-  }
-  return result;
+  return binaryComp(idx);
 };
 /**
- * 72 ms
- * 35.7 MB
+ * 48 ms
+ * 35.4 MB
  */
 
 module.exports = longestCommonPrefix;

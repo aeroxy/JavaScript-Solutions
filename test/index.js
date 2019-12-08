@@ -1,3 +1,3 @@
-const cases = require('../Longest Common Prefix/cases');
+const cases = require('../3Sum/cases');
 
 it('TEST', cases);

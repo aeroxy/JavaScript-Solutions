@@ -5,28 +5,78 @@
 const threeSum = nums => {
   const result = [];
   const length = nums.length;
-  // [-1, 0, 1, 2, -1, -4]
-  for (let idx = 0; idx < length; ++idx) {
-    const target = nums[idx];
-    const comp = {}
-    for (let i = 0; i < idx; ++i) {
-      let num = nums[i];
-      if (comp[num] !== undefined) {
-        result.push([ nums[comp[num]], num, target ]);
-        break;
-      }
-      comp[-1 * (target - num)] = i;
+  if (length < 3) {
+    return result;
+  }
+  // const swap = (arr, fist, last) => {
+  //   const temp = arr[fist];
+  //   arr[fist] = arr[last];
+  //   arr[last] = temp;
+  // }
+  // const partition = (arr, i, j) => {
+  //   const pivot = arr[(i + j) >> 1];
+  //   while (i <= j) {
+  //     while (arr[i] < pivot) {
+  //       ++i;
+  //     }
+  //     while (arr[j] > pivot) {
+  //       --j;
+  //     }
+  //     if (i <= j) {
+  //       swap(arr, i, j);
+  //       ++i;
+  //       --j;
+  //     }
+  //   }
+  //   return i;
+  // }
+  // const quickSort = (arr, i, j) => {
+  //   let index = partition(arr, i, j);
+  //   if (i < j - 1) {
+  //     quickSort(arr, i, index - 1);
+  //   }
+  //   if (index < j) {
+  //     quickSort(arr, index, j);
+  //   }
+  //   return arr;
+  // }
+  // quickSort(nums, 0, length - 1);
+  nums = nums.sort((a, b) => (a - b));
+  // console.log({ nums });
+  let last;
+  for (let i = 0; i < length - 2; ++i) {
+    if (nums[i] > 0) {
+      return result;
     }
-    for (let i = idx + 1; i < length; ++i) {
-      let num = nums[i];
-      if (comp[num] !== undefined) {
-        result.push([ target, nums[comp[num]], num ]);
-        break;
+    if (nums[i] === last) {
+      continue;
+    }
+    last = nums[i];
+    let j = i + 1;
+    let k = length - 1;
+    while (j < k) {
+      if (nums[i] + nums[j] + nums[k] === 0) {
+        result.push([nums[i], nums[j], nums[k]]);
+        ++j;
+        --k;
+        while (j < k && nums[j] === nums[j - 1]) {
+          ++j;
+        }
+        while (j < k && nums[k] === nums[k + 1]) {
+          --k;
+        }
+      } else if (nums[i] + nums[j] + nums[k] > 0) {
+        --k;
+      } else {
+        ++j;
       }
-      comp[-1 * (target - num)] = i;
     }
   }
   return result;
 };
+/**
+ * 152 ms
+ * 46.7 MB
+ */
 
 module.exports = threeSum;

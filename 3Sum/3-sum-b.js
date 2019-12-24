@@ -50,23 +50,23 @@ const threeSum = nums => {
       continue;
     }
     last = nums[i];
-    let j = i + 1;
-    let k = length - 1;
-    while (j < k) {
-      if (nums[i] + nums[j] + nums[k] === 0) {
-        result.push([nums[i], nums[j], nums[k]]);
-        ++j;
-        --k;
-        while (j < k && nums[j] === nums[j - 1]) {
-          ++j;
+    let l = i + 1;
+    let r = length - 1;
+    while (l < r) {
+      if (nums[i] + nums[l] + nums[r] === 0) {
+        result.push([nums[i], nums[l], nums[r]]);
+        ++l;
+        --r;
+        while (nums[l] === nums[l - 1]) {
+          ++l;
         }
-        while (j < k && nums[k] === nums[k + 1]) {
-          --k;
+        while (nums[r] === nums[r + 1]) {
+          --r;
         }
-      } else if (nums[i] + nums[j] + nums[k] > 0) {
-        --k;
+      } else if (nums[i] + nums[l] + nums[r] > 0) {
+        --r;
       } else {
-        ++j;
+        ++l;
       }
     }
   }

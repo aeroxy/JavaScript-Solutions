@@ -1,5 +1,5 @@
 const expect = require('../test/expect');
-const method = require('./3-sum-b');
+const method = require('./3-sum-c');
 const assert = require('assert');
 
 const testMethod = (input, output) => {

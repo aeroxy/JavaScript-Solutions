@@ -5,5 +5,5 @@ module.exports = (i, o, method) => {
     input: i,
     output: o
   });
-  return assert.equal(method(...i), ...o);
+  return assert.equal(method(...i), o);
 }

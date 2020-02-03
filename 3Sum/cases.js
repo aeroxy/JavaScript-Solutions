@@ -7,8 +7,8 @@ const testMethod = (...args) => {
 };
 
 module.exports = () => {
-  expect([[-1, 0, 1, 2, -1, -4]], [JSON.stringify([
+  expect([[-1, 0, 1, 2, -1, -4]], JSON.stringify([
     [-1, 0, 1],
     [-1, -1, 2]
-  ])], testMethod);
+  ]), testMethod);
 }

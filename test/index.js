@@ -1,3 +1,3 @@
-const cases = require('../3Sum/cases');
+const cases = require('../Kangaroo/cases');
 
 it('TEST', cases);

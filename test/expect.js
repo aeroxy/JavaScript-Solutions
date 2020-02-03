@@ -1,9 +1,9 @@
 const assert = require('assert');
 
-module.exports = (i, o, method) => {
+module.exports = (input, output, testMethod = assert.equal) => {
   console.log({
-    input: i,
-    output: o
+    input,
+    output
   });
-  return assert.equal(method(...i), o);
+  return testMethod(input, output);
 }

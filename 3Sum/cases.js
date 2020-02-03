@@ -25,8 +25,12 @@ const testMethod = (input, output) => {
 };
 
 module.exports = () => {
-
-    [-1, 0, 1],
-    [-1, -1, 2]
-
+  expect([
+    [-1, 0, 1, 2, -1, -4]
+  ], [
+    JSON.stringify([
+      [-1, 0, 1],
+      [-1, -1, 2]
+    ])
+  ], testMethod);
 }

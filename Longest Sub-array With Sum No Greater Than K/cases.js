@@ -1,5 +1,5 @@
 const expect = require('../test/expect');
-const method = require('./index');
+const method = require('.');
 const assert = require('assert');
 
 const testMethod = (input, output) => {

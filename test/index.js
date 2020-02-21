@@ -1,3 +1,3 @@
-const cases = require('../Longest Sub-array With Sum No Greater Than K/cases');
+const cases = require('../Day of the Programmer/cases');
 
 it('TEST', cases);

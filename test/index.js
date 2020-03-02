@@ -1,3 +1,3 @@
-const cases = require('../Bon Appétit/cases');
+const cases = require('../Sock Merchant/cases');
 
 it('TEST', cases);

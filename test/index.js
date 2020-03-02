@@ -1,3 +1,3 @@
-const cases = require('../Drawing Book/cases');
+const cases = require('../Counting Valleys/cases');
 
 it('TEST', cases);

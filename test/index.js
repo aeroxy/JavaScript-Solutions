@@ -1,3 +1,3 @@
-const cases = require('../Day of the Programmer/cases');
+const cases = require('../Bon Appétit/cases');
 
 it('TEST', cases);

@@ -1,3 +1,3 @@
-const cases = require('../Sock Merchant/cases');
+const cases = require('../Drawing Book/cases');
 
 it('TEST', cases);

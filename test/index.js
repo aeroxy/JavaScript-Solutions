@@ -1,3 +1,5 @@
-const cases = require('../Twenty Four/cases');
+const { testCases } = require('../3Sum Closest/cases');
 
-it('TEST', cases);
+for (let test of testCases) {
+  it('TEST', test);
+}

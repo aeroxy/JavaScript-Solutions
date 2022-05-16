@@ -9,24 +9,19 @@ const digitMap = {
   '9': ['w', 'x', 'y', 'z'],
 };
 
-const dfs = (position, string, digits, result) => {
+/**
+ * @param {string} digits
+ * @return {string[]}
+ */
+function letterCombinations(digits, position = 0, string = '', result = []) {
   if (position === digits.length) {
     string && result.push(string);
   } else {
     const letters = digitMap[digits[position]] || [];
     for (let i = 0; i < letters.length; i++) {
-      dfs(position + 1, string + letters[i], digits, result);
+      letterCombinations(digits, position + 1, string + letters[i], result);
     }
   }
-}
-
-/**
- * @param {string} digits
- * @return {string[]}
- */
-const letterCombinations = function(digits) {
-  const result = [];
-  dfs(0, '', digits, result);
   return result;
 };
 

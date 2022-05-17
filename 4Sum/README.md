@@ -1,5 +1,8 @@
-Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
 
-A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+0 <= a, b, c, d < n
+a, b, c, and d are distinct.
+nums[a] + nums[b] + nums[c] + nums[d] == target
+You may return the answer in any order.
 
-https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+https://leetcode.com/problems/4sum/

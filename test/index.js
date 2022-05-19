@@ -1,4 +1,4 @@
-const { testCases } = require('../Find All Triplets With The Given Sum in The Given Array/cases');
+const { testCases } = require('../Valid Parentheses/cases');
 
 for (let test of testCases) {
   it('TEST', test);

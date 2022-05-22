@@ -1,5 +1,5 @@
 const expect = require('../test/expect');
-const method = require('.');
+const method = require('./solution2');
 const assert = require('assert');
 
 const {
@@ -29,6 +29,12 @@ module.exports = {
         createNodeFromArray([1,2,3,4,5]),
         3,
       ], [3,2,1,4,5], testMethod);
+    },
+    () => {
+      expect([
+        createNodeFromArray([1,2,3,4,5]),
+        4,
+      ], [4,3,2,1,5], testMethod);
     },
   ],
 };

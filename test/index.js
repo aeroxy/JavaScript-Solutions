@@ -1,4 +1,4 @@
-const { testCases } = require('../Merge Two Sorted Lists/cases');
+const { testCases } = require('../Generate Parentheses/cases');
 
 for (let test of testCases) {
   it('TEST', test);

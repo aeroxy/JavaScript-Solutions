@@ -1,4 +1,4 @@
-const { testCases } = require('../Reverse Nodes in k-Group/cases');
+const { testCases } = require('../Remove Duplicates from Sorted Array/cases');
 
 for (let test of testCases) {
   it('TEST', test);

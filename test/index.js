@@ -1,4 +1,4 @@
-const { testCases } = require('../Swap Nodes in Pairs/cases');
+const { testCases } = require('../Reverse Nodes in k-Group/cases');
 
 for (let test of testCases) {
   it('TEST', test);

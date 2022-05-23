@@ -24,5 +24,11 @@ module.exports = {
         -3,
       ], -2, testMethod);
     },
+    () => {
+      expect([
+        -2147483648,
+        -1,
+      ], 2147483647, testMethod);
+    },
   ],
 };

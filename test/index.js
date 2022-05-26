@@ -1,4 +1,4 @@
-const { testCases } = require('../Substring with Concatenation of All Words/cases');
+const { testCases } = require('../Next Permutation/cases');
 
 for (let test of testCases) {
   it('TEST', test);

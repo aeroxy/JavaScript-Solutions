@@ -16,7 +16,6 @@ const longestCommonPrefix = strs => {
     result = result.concat(c);
     ++i;
   }
-  return result;
 };
 /**
  * 72 ms

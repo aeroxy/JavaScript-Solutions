@@ -1,4 +1,4 @@
-const { testCases } = require('../Next Permutation/cases');
+const { testCases } = require('../Longest Valid Parentheses/cases');
 
 for (let test of testCases) {
   it('TEST', test);

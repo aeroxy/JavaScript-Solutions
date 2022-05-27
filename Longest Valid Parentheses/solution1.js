@@ -29,7 +29,7 @@ function longestValidParentheses(s) {
     }
   }
   return maxlen;
-};
+}
 
 function isValid(string) {
   let openCount = 0;

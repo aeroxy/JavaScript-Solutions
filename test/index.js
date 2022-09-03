@@ -1,4 +1,4 @@
-const { testCases } = require('../Longest Valid Parentheses/cases');
+const { testCases } = require('../Search in Rotated Sorted Array/cases');
 
 for (let test of testCases) {
   it('TEST', test);

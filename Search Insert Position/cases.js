@@ -1,0 +1,58 @@
+const expect = require('../test/expect');
+const method = require('./solution');
+const assert = require('assert');
+
+function testMethod (input, output) {
+  const result = method(...input);
+  assert.equal(
+    output,
+    result,
+  );
+};
+
+module.exports = {
+  testCases: [
+    () => {
+      expect([
+        [1,3,5,6],
+        5,
+      ], 2, testMethod);
+    },
+    () => {
+      expect([
+        [1,3,5,6],
+        2,
+      ], 1, testMethod);
+    },
+    () => {
+      expect([
+        [1,3,5,6],
+        7,
+      ], 4, testMethod);
+    },
+    () => {
+      expect([
+        [1,3,5,6],
+        2,
+      ], 1, testMethod);
+    },
+    () => {
+      expect([
+        [1,3],
+        2,
+      ], 1, testMethod);
+    },
+    () => {
+      expect([
+        [3,6,7,8,10],
+        5,
+      ], 1, testMethod);
+    },
+    () => {
+      expect([
+        [1,3],
+        3,
+      ], 1, testMethod);
+    },
+  ],
+};

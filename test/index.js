@@ -1,4 +1,4 @@
-const { testCases } = require('../Random Math Quiz/cases');
+const { testCases } = require('../Sudoku Solver/cases');
 
 for (let test of testCases) {
   it('TEST', test);

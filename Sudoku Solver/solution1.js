@@ -33,7 +33,7 @@ function solveSudoku(board) {
   /**
    * @param {number} i
    * @param {number} j
-   * @param {string} val
+   * @param {character} val
    * @return {boolean}
    */
   const isValid = (i, j, val) => {

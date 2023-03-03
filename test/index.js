@@ -1,4 +1,4 @@
-const { testCases } = require('../Upper Case AND OR/cases');
+const { testCases } = require('../Count and Say/cases');
 
 for (let test of testCases) {
   it('TEST', test);

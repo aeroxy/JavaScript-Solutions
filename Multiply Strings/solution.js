@@ -18,7 +18,7 @@ function multiply(num1, num2) {
       pos[p2] = sum % 10;
     }
   }
-  console.log(pos);
+
   const sb = [];
   for (let p of pos) {
     if (!(sb.length === 0 && p === 0)) {

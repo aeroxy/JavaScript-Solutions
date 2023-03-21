@@ -15,5 +15,8 @@ module.exports = {
     () => {
       expect(['123', '456'], '56088', testMethod);
     },
+    () => {
+      expect(['0', '0'], '0', testMethod);
+    },
   ],
 };

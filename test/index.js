@@ -1,4 +1,4 @@
-const { testCases } = require('../Insert Space Between Letters/cases');
+const { testCases } = require('../Concurrent Async Pipeline/cases');
 
 for (let test of testCases) {
   it('TEST', test);

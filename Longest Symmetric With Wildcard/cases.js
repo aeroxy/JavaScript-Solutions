@@ -1,5 +1,5 @@
 const expect = require("../test/expect");
-const method = require("./solution");
+const method = require("./solution2");
 const assert = require("assert");
 
 function testMethod(input, output) {
@@ -12,5 +12,6 @@ module.exports = {
     () => expect(['<><??>>'], 4, testMethod),
     () => expect(['??????'], 6, testMethod),
     () => expect(['<<?'], 2, testMethod),
+    () => expect(['><><'], 2, testMethod),
   ],
 };

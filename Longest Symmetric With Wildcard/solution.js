@@ -1,3 +1,7 @@
+/**
+ * @param {string} S
+ * @return {number}
+ */
 function solution(S) {
   const results = new Set();
 

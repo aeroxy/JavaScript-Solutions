@@ -1,0 +1,1 @@
+Given an array of 99 unique numbers, from 1- 100. Return the missing number of the said array.

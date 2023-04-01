@@ -1,4 +1,4 @@
-const { testCases } = require('../Minimum Window Substring/cases');
+const { testCases } = require('../Subsets/cases');
 
 for (let test of testCases) {
   it('TEST', test);

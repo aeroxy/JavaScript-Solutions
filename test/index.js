@@ -1,4 +1,4 @@
-const { testCases } = require('../Binary Tree Level Order Traversal/cases');
+const { testCases } = require('../Maximum Depth of Binary Tree/cases');
 
 for (let test of testCases) {
   it('TEST', test);

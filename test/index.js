@@ -1,4 +1,4 @@
-const { testCases } = require('../Regex Replacing Brackets/cases');
+const { testCases } = require('../Flatten Binary Tree to Linked List/cases');
 
 for (let test of testCases) {
   it('TEST', test);

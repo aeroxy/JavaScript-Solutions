@@ -1,4 +1,4 @@
-const { testCases } = require('../Insert Interval/cases');
+const { testCases } = require('../Palindrome Partitioning/cases');
 
 for (let test of testCases) {
   it('TEST', test);

@@ -1,5 +1,5 @@
 const expect = require("../test/expect");
-const method = require("./solution2");
+const method = require("./solution4");
 const assert = require("assert");
 
 function testMethod(input, output) {

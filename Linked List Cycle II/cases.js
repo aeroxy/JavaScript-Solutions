@@ -1,10 +1,10 @@
 const expect = require("../test/expect");
-const method = require("./solution4");
+const method = require("./solution2");
 const assert = require("assert");
 
 function testMethod(input, output) {
   const result = method(...input);
-  return assert.equal(result, output);
+  return assert.equal(result ? result.val : result, output);
 }
 
 class ListNode {
@@ -42,21 +42,21 @@ module.exports = {
       [
         createLinkedList([3, 2, 0, -4], 1),
       ],
-      true,
+      2,
       testMethod,
     ),
     () => expect(
       [
         createLinkedList([1, 2], 0),
       ],
-      true,
+      1,
       testMethod,
     ),
     () => expect(
       [
         createLinkedList([1], -1),
       ],
-      false,
+      null,
       testMethod,
     ),
   ],

@@ -1,4 +1,4 @@
-const { testCases } = require('../Longest Consecutive Sequence/cases');
+const { testCases } = require('../Word Break/cases');
 
 for (let test of testCases) {
   it('TEST', test);

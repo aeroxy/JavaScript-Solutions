@@ -1,4 +1,4 @@
-const { testCases } = require('../Linked List Cycle/cases');
+const { testCases } = require('../LRU Cache/cases');
 
 for (let test of testCases) {
   it('TEST', test);

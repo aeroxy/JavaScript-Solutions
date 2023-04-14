@@ -1,4 +1,4 @@
-const { testCases } = require('../Rotate Array/cases');
+const { testCases } = require('../House Robber/cases');
 
 for (let test of testCases) {
   it('TEST', test);

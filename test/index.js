@@ -1,4 +1,4 @@
-const { testCases } = require('../Course Schedule/cases');
+const { testCases } = require('../Implement Trie (Prefix Tree)/cases');
 
 for (let test of testCases) {
   it('TEST', test);

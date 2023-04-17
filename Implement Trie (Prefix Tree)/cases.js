@@ -1,5 +1,5 @@
 const expect = require("../test/expect");
-const Trie = require("./solution1");
+const Trie = require("./solution3");
 const assert = require("assert");
 
 /** 

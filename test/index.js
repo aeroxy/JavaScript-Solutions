@@ -1,4 +1,4 @@
-const { testCases } = require('../Invert Binary Tree/cases');
+const { testCases } = require('../Kth Smallest Element in a BST/cases');
 
 for (let test of testCases) {
   it('TEST', test);

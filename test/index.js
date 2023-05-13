@@ -1,4 +1,4 @@
-const { testCases } = require('../Sliding Window Maximum/cases');
+const { testCases } = require('../Move Zeroes/cases');
 
 for (let test of testCases) {
   it('TEST', test);

@@ -12,7 +12,7 @@ function getMinCodeEntryTime(N, M, C) {
 
   // dp[j] = min cost with passive at C[j]
   // Valid values only exist for indices 0..maxValidJ
-  const dp = new Int32Array(M);
+  const dp = new Float64Array(M);
   let maxValidJ = -1; // No valid entries initially
 
   // cost when passive remains at position 1

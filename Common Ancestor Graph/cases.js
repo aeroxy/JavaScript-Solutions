@@ -1,5 +1,5 @@
 const fs = require("fs");
-const method = require("./solution");
+const method = require("./solution2");
 const assert = require("assert");
 
 module.exports = {

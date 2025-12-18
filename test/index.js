@@ -1,4 +1,4 @@
-const { testCases } = require('../Rotary Lock II/cases');
+const { testCases } = require('../Common Ancestor Graph/cases');
 
 for (let test of testCases) {
   it('TEST', test);

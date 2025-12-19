@@ -4,7 +4,7 @@
   "description": "This is a repo to document some of the solutions I created for JavaScript problems.",
   "main": "test/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/index.js"
   },
   "repository": {
     "type": "git",

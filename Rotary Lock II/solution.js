@@ -69,7 +69,6 @@ function getMinCodeEntryTime(N, M, C) {
 
   // The final answer is to find the minimal time in
   // [curMinTimeWithRightLockAtPosition1, ...minTimeWithPassiveLockAt] 
-  console.log(curMinTimeWithRightLockAtPosition1, minTimeWithPassiveLockAt)
   return Math.min(
     curMinTimeWithRightLockAtPosition1,
     Math.min.apply(null, minTimeWithPassiveLockAt)

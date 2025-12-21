@@ -1,0 +1,1 @@
+Use `bun run test "Challenge Name"` to run test; update `cases.js` to import different solution in the Challenge folder.

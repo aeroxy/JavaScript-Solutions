@@ -11,8 +11,8 @@ const casesPath = path.resolve(__dirname, '..', problemName, 'cases.js');
 
 try {
   const { testCases } = require(casesPath);
-  for (let test of testCases) {
-    it(problemName, test);
+  for (let idx = 0; idx < testCases.length; ++idx) {
+    it(`${problemName} (case ${idx + 1})`, testCases[idx]);
   }
 } catch (e) {
   console.error(`Could not load cases from ${casesPath}`);
